@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocker Spaniel</title>
+</head>
+<style>
+    body {
+        display: block;
+        margin: 5px;
+    }
+
+    h1 {
+        text-shadow: 2px 4px rgba(249, 213, 194, 0.9);
+        color: #321303;
+        border: 8px ridge rgba(140, 116, 88, 0.8);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 8%;
+        font-size: 140%;
+    }
+
+    h2 {
+        font-size: 120%;
+        padding: 30px;
+    }
+
+    hr {
+        height: 3px;
+        background-color: #321303;
+        border: none;
+    }
+
+    .finalProject {
+        text-align: center;
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        box-shadow: 0px 0px 24px 9px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 60%;
+        padding: 80px;
+        margin: 80px auto;
+        font-family: cursive;
+        color: rgb(49, 30, 4);
+        font-size: x-large;
+    }
+
+    .finalProject img {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 10px;
+        width: 80%;
+        height: 40%;
+    }
+
+    .gif img {
+        width: 60%;
+        height: 60%;
+    }
+
+    a {
+        display: block;
+        padding: 10px 15px;
+        margin: 60px;
+        color: rgb(61, 36, 5);
+        cursor: pointer;
+        text-decoration-line: none;
+        border: 2px solid rgba(140, 116, 88, 0.8);
+        border-radius: 10px;
+    }
+
+    button {
+        border-radius: 5px;
+        margin: 0 auto;
+        display: block;
+        background-color: rgb(14, 1, 1);
+        border: 1px solid #53070f;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+    }
+
+    button:hover {
+        color: #fff;
+        background: radial-gradient(1091px at 106.5% 111.5%,
+                rgb(250, 246, 213) 0.1%,
+                rgb(218, 147, 93) 42.2%,
+                rgb(137, 86, 67) 74.3%,
+                rgb(67, 39, 39) 100.2%);
+    }
+</style>
+
+<body>
+    <div class="finalProject">
+        <h1>I love my English Cocker Spaniel</h1>
+
+        <h2>
+            Why we love them?🖤🤎🤍
+            <br />
+            <em>Strong, cheerful and full of life. His tail is always wagging</em>🐾.
+        </h2>
+        <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/268/original/cocker-spaniel-1.jpg?1668700709" />
+
+        <hr />
+        <span class="gif">
+            <img src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/270/original/JorginoDogGIF.gif?1668701633" />
+        </span>
+        <p>
+            The Cocker Spaniel is a small to medium sized hunting dog ,
+            characterized by a smooth coat and long ears. Its origin is Spanish, and
+            this can be deduced from the term "spaniel" which characterizes its
+            name. This adorable pet is very cooperative,sensitive, cheerful, lively
+            dog ​​with a strong and determined character.The
+            <em>English cocker spaniel</em> has slowly transformed from a
+            traditional hunting dog into one of the best companion dogs. His tail
+            always wags, testifying to his continuous exuberance and also his
+            affectionateness.This dog is resistant, active and very sweet.
+        </p>
+        <br />
+        <h6>
+            <a href="https://it.wikipedia.org/wiki/Cocker_spaniel_inglese" target="_blank">Read more on Wikipedia</a>
+        </h6>
+        <hr />
+        <button>Click Me🐶</button>
+    </div>
+
+    <script>
+        function clickMe() {
+            let name = prompt("what's your best friend's name?🐾💞");
+            let age = prompt("Is an adult or a puppy?🐾");
+            age = age.toLowerCase().trim();
+            age = age.replace("adlt", "adult");
+            let div = document.querySelector("div");
+            if (age === "adult") {
+                div.innerHTML =
+                    "Hi! " +
+                    name +
+                    "🐾🖤🤎🤍" +
+                    "<br/>" +
+                    "<img src='https://perrospequenos.es/wp-content/uploads/2022/04/colores-cocker-ingles.jpg' />";
+            } else {
+                div.innerHTML =
+                    "Hi! " +
+                    name +
+                    "🐾🖤🤎🤍" +
+                    "<br/>" +
+                    "<img src='https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/277/original/20131129204441_image.jpg?1668704405'/>";
+            }
+        }
+        let clickMeButton = document.querySelector("button");
+        clickMeButton.addEventListener("click", clickMe);
+    </script>
+</body>
+
+</html>
